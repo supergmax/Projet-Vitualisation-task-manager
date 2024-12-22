@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.app-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.app-container h1 {
+    text-align: center;
+    color: #343a40;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.app-container .task-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.app-container .task-card {
+    background: #e9ecef;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-container .task-card button {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+  /* Styles pour TaskForm */
+  form.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .task-form input,
+  .task-form textarea,
+  .task-form button {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+  }
+  
+  .task-form button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .task-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styles pour TaskList */
+  .task-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .task-list .task-card {
+    background: #e9ecef;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-list .task-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .task-list .task-card p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+  
+  .task-list .task-card button {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .task-list .task-card button:hover {
+    background-color: #c82333;
+  }
+  
